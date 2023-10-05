@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Project Management form using JPDB </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https:/>/maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+        
+        <script src='https:/>/ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><!-- comment -->
+      
+    <script src='https://maxcdn.bootstrapapcdn.com/bootstrap/3.4.1/js/botstrap.min.js'></script>
+    
+    </head>
+    <body>
+        <div> class='container'>
+            <div class='page-header text-center'>
+                <h2>Project Management form using JPDB API</h2><!-- comment -->
+            </div>
+            <form id='Proform' method='get'>
+                <div class='form-group'>
+                    <label> Project ID : </label><!-- comment -->
+                    <input type='text' id='proid' class='form-control' onchange='getPro()'>
+                </div>
+                <div class='form-group'>
+                    <label> Project Name:</label><!-- comment -->
+                    <input type='text' id='proname' class='form-control'>
+                </div>
+                <div class='form-group'>
+                    <label> Assigned-To : </label><!-- comment -->
+                    <input type='text' id='proassi' class='form-control'><!-- comment -->
+                </div>
+                <div class='form-group'>
+                    <label> Assigned-Date : </label><!-- comment -->
+                    <input type='number' id='assidate' class='form-control'>
+                </div>
+                <div class='form-group'>
+                    <label> Deadline : </label>
+                    <input type='number' id='ddline' class='form-control'>
+                </div>
+                <div class='form-group text-center'>
+                    <button type='button' class='btn btn-lg btn-primary' id='save' onclick='saveData()' disabled>Save</button><!-- comment -->
+                    <button type='button' class='btn btn-lg btn-primary' id='change' onclick='changeData()' disabled>Change</button><!-- comment -->
+                    <button type='button' class='btn btn-lg btn-primary' id='reset' onclick='resetForm()' disabled>Reset</button>
+                </div>
+            </form>
+        </div>
+        
+        <script type='text/javascript' src='http://login2explore.com/jpdb/resorces/js/0.0.3/jpdb-commons.js'></script><!-- comment -->
+        <script type='text/javascript' src='js/index.js'></script><!-- comment -->
+        
+        
+        
+        
+    </body>
+</html>
